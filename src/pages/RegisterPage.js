@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 const RegisterPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState(''); // Default to empty, matches the HTML provided
+  const [role, setRole] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -16,7 +17,7 @@ const RegisterPage = () => {
       const response = await fetch('http://localhost:8000/api/users/register/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password, role }), // Include the role in the request
+        body: JSON.stringify({ email, password, role }),
       });
 
       if (response.ok) {
@@ -36,12 +37,13 @@ const RegisterPage = () => {
     <div>
       <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
         <div className="container-fluid">
-          <a className="navbar-brand login" href="#">GEDSI</a>
+          <a className="navbar-brand login" href="#">GEDSI HUB</a>
         </div>
       </nav>
       <section id="main" className="log-main">
-        <h2 style={{ textAlign: 'center' }}>Activate your Account</h2>
+        
         <div className="container login-con">
+          <h2 >Activate your Account</h2>
           <form className="text-center" onSubmit={handleSubmit}>
             <div className="mb-3">
               <label className="form-label d-flex justify-content-start login-lbl">Email</label>
@@ -84,15 +86,8 @@ const RegisterPage = () => {
                 <option value="employee">Employee</option>
               </select>
             </div>
-            <div className="d-flex justify-content-between login-ftr">
-              <div className="form-check rbm-me">
-                <input className="form-check-input" type="checkbox" id="formCheck-1" />
-                <label className="form-check-label" htmlFor="formCheck-1">Keep me logged in</label>
-              </div>
-              <a className="fgt-pass" href="#">Forgot Password?</a>
-            </div>
             <div className="mb-3">
-              <button className="btn btn-primary shadow-sm d-block w-100 login-btn" type="submit">Login</button>
+              <button className="btn btn-primary shadow-sm d-block w-100 login-btn" type="submit">Activate</button>
             </div>
           </form>
           {error && <p className="text-danger">{error}</p>}

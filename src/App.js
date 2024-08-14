@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import './bootstrap/css/bootstrap.min.css';
-// import './css/bs-theme-overrides.css';
 import './css/activation.css';
+// import './css/bs-theme-overrides.css';
 // import './css/Login-Form-Basic-icons.css';
 
 const App = () => {

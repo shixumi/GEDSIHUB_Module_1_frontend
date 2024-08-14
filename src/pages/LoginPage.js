@@ -35,29 +35,55 @@ const LoginPage = () => {
 
   return (
     <div>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+      <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
+        <div className="container-fluid">
+          <a className="navbar-brand login" href="#">GEDSI HUB</a>
         </div>
-        <div>
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+      </nav>
+      <section id="main" className="log-main">
+        <div className="container login-con">
+          <h2>Login to Your Account</h2>
+          <form className="text-center" onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <label className="form-label d-flex justify-content-start login-lbl">Email</label>
+              <input
+                className="focus-ring focus-ring-light form-control login-form"
+                type="email"
+                name="email"
+                placeholder="Enter your pup webmail"
+                required
+                pattern="^[a-zA-Z0-9._%+-]+@.+\.(pup|edu|com)$"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="mb-3">
+              <label className="form-label d-flex justify-content-start login-lbl">Password</label>
+              <input
+                className="focus-ring focus-ring-light form-control"
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                minLength="6"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="d-flex justify-content-between login-ftr">
+              <div className="form-check rbm-me">
+                <input className="form-check-input" type="checkbox" id="formCheck-1" />
+                <label className="form-check-label" htmlFor="formCheck-1">Keep me logged in</label>
+              </div>
+              <a className="fgt-pass" href="#">Forgot Password?</a>
+            </div>
+            <div className="mb-3">
+              <button className="btn btn-primary shadow-sm d-block w-100 login-btn" type="submit">Login</button>
+            </div>
+          </form>
+          {error && <p className="text-danger">{error}</p>}
         </div>
-        <button type="submit">Login</button>
-      </form>
-      {error && <p>{error}</p>}
+      </section>
     </div>
   );
 };
