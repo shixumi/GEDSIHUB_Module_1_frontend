@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import gadologo from '../img/v2gadologo.png';
 
 const RegisterPage = () => {
   const [email, setEmail] = useState('');
@@ -34,7 +34,7 @@ const RegisterPage = () => {
   };
 
   return (
-    <div>
+    <div class="body-home">
       <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
         <div className="container-fluid">
           <a className="navbar-brand login">GEDSI HUB</a>
@@ -43,10 +43,14 @@ const RegisterPage = () => {
       <section id="main-form" className="log-main">
         
         <div className="container login-con">
-          <h2 >Activate your Account</h2>
+          <div class="text-center formlogo">
+            <img src={gadologo} width='150px' margin-bottom="200px" alt="logo" className="logo" />
+          </div>
+          <h2 class="head2">GEDSI HUB</h2>
+          <p class='text-center'>Fill up to activate your account</p>
           <form className="text-center" onSubmit={handleSubmit}>
             <div className="mb-3">
-              <label className="form-label d-flex justify-content-start login-lbl">Email</label>
+
               <input
                 className="focus-ring focus-ring-light form-control login-form"
                 type="email"
@@ -59,7 +63,7 @@ const RegisterPage = () => {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label d-flex justify-content-start login-lbl">Password</label>
+
               <input
                 className="focus-ring focus-ring-light form-control"
                 type="password"
@@ -72,7 +76,6 @@ const RegisterPage = () => {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label d-flex justify-content-start login-lbl">Role</label>
               <select
                 className="focus-ring focus-ring-light form-select select-role"
                 id="role"

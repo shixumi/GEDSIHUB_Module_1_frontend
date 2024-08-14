@@ -4,7 +4,7 @@
 
 
 /* Main section styles */
-#main-form {
+#main-form{
   display: flex;
   justify-content: flex-end; /* Align the container to the right */
   align-items: center; /* Vertically center the container */
@@ -16,9 +16,19 @@
 #main {
   width: 100%;
   height: 100vh;
-  margin-top: 200px;
+  margin-top: 100px;
   font-family: Poppins, sans-serif;
 }
+
+.body-home {
+  margin: 0;
+  height: 100vh;
+  background: url('../img/login-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Make sure the gradient covers the entire page */
+}
+
 
 /* Navbar styles */
 .navbar-brand {
@@ -35,6 +45,11 @@
   padding-left: 2%;
 }
 
+.gadologo {
+  width: 100px;
+  height: 100px;
+}
+
 /* Container styles */
 .container.emailsent{
   max-width: 596px;
@@ -45,6 +60,7 @@
   padding-right: 40px;
   border-radius: 20px;
   padding-top: 30px;
+  margin-top: 150px;
 }
 /* Container styles */
 .container.status{
@@ -59,13 +75,22 @@
   text-align: center;
 }
 
+
 .container.login-con {
+  backdrop-filter: blur(10px);
   margin-right: 0px; /* Stick to the right */
   height: 100%;
   max-width: 596px;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.7); /* White background with 80% opacity */
   box-shadow: 0px 0px 10px rgba(33,37,41,0.33);
-  padding: 100px 40px;
+  padding: 150px 40px;
+  overflow: hidden; /* Prevent the pseudo-element from overflowing */
+}
+
+form
+
+.login-con.head2 {
+  margin-bottom: 300px;
 }
 
 /* Form control styles */
@@ -80,7 +105,7 @@
 .login-btn {
   padding: 15px;
   border-radius: 10px;
-  background: #660000;
+  background: #007bff;
   color: #ffffff;
   border: none;
   font-size: 18px;
@@ -88,7 +113,7 @@
 
 .login-btn:hover, .login-btn:active {
   color: #ffffff;
-  background-color: #c81b1b;
+  background-color: #0069d9;
 }
 
 /* Label styles */
@@ -100,7 +125,7 @@
 
 /* Login footer styles */
 .login-ftr {
-  font-size: 13px;
+  font-size: 15px;
   color: #464040;
   margin-bottom: 30px;
 }
@@ -137,19 +162,18 @@ select:invalid, select[value=""] {
 /* Media queries for small screens */
 @media (max-width: 500px) {
   .container.login-con {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.9); /* White background with 80% opacity */
     box-shadow: none;
     padding: 45px 40px;
     margin-right: 0;
   }
-
-  #main {
-    height: auto;
-    margin-top: 150px;
-    justify-content: center; /* Center the container horizontally on small screens */
+  
+  .login-con h2{
+    padding-top: 40px;
   }
 
-  .container h2 {
+  #main-form
+  {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 14px;
@@ -184,5 +208,10 @@ select:invalid, select[value=""] {
 }
 
 .container h2 {
-  margin-bottom: 15px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  font-family: Staatliches, sans-serif;
 }
+
+
+
