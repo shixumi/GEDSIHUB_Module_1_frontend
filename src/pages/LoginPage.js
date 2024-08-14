@@ -37,7 +37,7 @@ const LoginPage = () => {
     <div>
       <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
         <div className="container-fluid">
-          <a className="navbar-brand login" href="#">GEDSI HUB</a>
+          <a className="navbar-brand login">GEDSI HUB</a>
         </div>
       </nav>
       <section id="main" className="log-main">

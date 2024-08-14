@@ -37,7 +37,6 @@ const RegisterPage = () => {
     <div>
       <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
         <div className="container-fluid">
-          <a className="navbar-brand login">GEDSI</a>
           <a className="navbar-brand login">GEDSI HUB</a>
         </div>
       </nav>
