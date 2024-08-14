@@ -21,7 +21,7 @@ const RegisterPage = () => {
       });
 
       if (response.ok) {
-        navigate('/login');
+        navigate('/email-sent');
       } else {
         const errorData = await response.json();
         console.error('Registration failed:', errorData);
@@ -40,7 +40,7 @@ const RegisterPage = () => {
           <a className="navbar-brand login">GEDSI HUB</a>
         </div>
       </nav>
-      <section id="main" className="log-main">
+      <section id="main-form" className="log-main">
         
         <div className="container login-con">
           <h2 >Activate your Account</h2>

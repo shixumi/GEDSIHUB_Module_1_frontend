@@ -4,12 +4,19 @@
 
 
 /* Main section styles */
-#main {
+#main-form {
   display: flex;
   justify-content: flex-end; /* Align the container to the right */
   align-items: center; /* Vertically center the container */
   width: 100%;
   height: 100vh;
+  font-family: Poppins, sans-serif;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  margin-top: 200px;
   font-family: Poppins, sans-serif;
 }
 
@@ -29,8 +36,27 @@
 }
 
 /* Container styles */
-.container {
-  font-family: Poppins, sans-serif;
+.container.emailsent{
+  max-width: 596px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(33,37,41,0.33);
+  padding-left: 40px;
+  padding-bottom: 31px;
+  padding-right: 40px;
+  border-radius: 20px;
+  padding-top: 30px;
+}
+/* Container styles */
+.container.status{
+  max-width: 596px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(33,37,41,0.33);
+  padding-left: 40px;
+  padding-bottom: 31px;
+  padding-right: 40px;
+  border-radius: 20px;
+  padding-top: 30px;
+  text-align: center;
 }
 
 .container.login-con {
@@ -128,4 +154,35 @@ select:invalid, select[value=""] {
     font-weight: 600;
     margin-bottom: 14px;
   }
+
+  .container.emailsent {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    padding: 45px 40px;
+    padding-top: 44px;
+    margin-top: 0;
+  }
+}
+
+.email-icon {
+  color: #1d945a;
+  background: #e6f3ed;
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 83px;
+}
+
+.icon-col {
+  padding: 0;
+  padding-right: 0;
+  margin-top: 0;
+  max-width: 30%;
+}
+
+.p-email {
+  margin-top: 6px;
+}
+
+.container h2 {
+  margin-bottom: 15px;
 }

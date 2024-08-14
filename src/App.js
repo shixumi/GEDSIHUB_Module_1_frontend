@@ -3,11 +3,11 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import EmailSent from './pages/Emailsent'; 
 import ActivationPage from './pages/ActivationPage';
 import './bootstrap/css/bootstrap.min.css';
 import './css/activation.css';
-// import './css/bs-theme-overrides.css';
-// import './css/Login-Form-Basic-icons.css';
+
 
 const App = () => {
   const isAuthenticated = !!localStorage.getItem('token');
@@ -17,6 +17,7 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/email-sent" element={<EmailSent />} />
         <Route path="/activate/:uid/:token" element={<ActivationPage />} />
         <Route
           path="/"
