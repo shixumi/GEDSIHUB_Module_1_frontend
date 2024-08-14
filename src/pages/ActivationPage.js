@@ -44,7 +44,7 @@ const ActivationPage = () => {
                 <h2 style={{ textAlign: 'center' }}>Status</h2>
                 <div className="row justify-content-center">
                     <div className>
-                        <p>Account activated successfully. Redirecting...</p>
+                        <p>{status}</p>
                     </div>
                 </div>
             </div>
