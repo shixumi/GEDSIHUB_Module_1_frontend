@@ -36,7 +36,7 @@ const RegisterPage = () => {
     <div>
       <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
         <div className="container-fluid">
-          <a className="navbar-brand login" href="#">GEDSI</a>
+          <a className="navbar-brand login">GEDSI</a>
         </div>
       </nav>
       <section id="main" className="log-main">
@@ -80,8 +80,8 @@ const RegisterPage = () => {
                 onChange={(e) => setRole(e.target.value)}
               >
                 <option value="" disabled>Select your role</option>
-                <option value="student">Student</option>
-                <option value="employee">Employee</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
               </select>
             </div>
             <div className="d-flex justify-content-between login-ftr">
@@ -89,7 +89,7 @@ const RegisterPage = () => {
                 <input className="form-check-input" type="checkbox" id="formCheck-1" />
                 <label className="form-check-label" htmlFor="formCheck-1">Keep me logged in</label>
               </div>
-              <a className="fgt-pass" href="#">Forgot Password?</a>
+              <a className="fgt-pass">Forgot Password?</a>
             </div>
             <div className="mb-3">
               <button className="btn btn-primary shadow-sm d-block w-100 login-btn" type="submit">Login</button>
