@@ -5,6 +5,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import EmailSent from './pages/Emailsent'; 
 import ActivationPage from './pages/ActivationPage';
+import HomePage from './pages/HomePage';
 import './bootstrap/css/bootstrap.min.css';
 import './css/activation.css';
 
@@ -19,9 +20,10 @@ const App = () => {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/email-sent" element={<EmailSent />} />
         <Route path="/activate/:uid/:token" element={<ActivationPage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route
-          path="/"
-          element={isAuthenticated ? <h1>Home Page</h1> : <Navigate to="/login" />}
+          path=""
+          element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />}
         />
       </Routes>
     </Router>

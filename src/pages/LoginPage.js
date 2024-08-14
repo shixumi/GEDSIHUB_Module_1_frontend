@@ -22,7 +22,7 @@ const LoginPage = () => {
       if (response.ok) {
         const data = await response.json();
         localStorage.setItem('token', data.token);
-        navigate('/');
+        navigate('/home');
       } else {
         const errorData = await response.json();
         setError(errorData.detail || 'Login failed');
