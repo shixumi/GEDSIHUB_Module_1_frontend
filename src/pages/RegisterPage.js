@@ -37,7 +37,8 @@ const RegisterPage = () => {
     <div>
       <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>
         <div className="container-fluid">
-          <a className="navbar-brand login" href="#">GEDSI HUB</a>
+          <a className="navbar-brand login">GEDSI</a>
+          <a className="navbar-brand login">GEDSI HUB</a>
         </div>
       </nav>
       <section id="main" className="log-main">
@@ -82,8 +83,8 @@ const RegisterPage = () => {
                 onChange={(e) => setRole(e.target.value)}
               >
                 <option value="" disabled>Select your role</option>
-                <option value="student">Student</option>
-                <option value="employee">Employee</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
               </select>
             </div>
             <div className="mb-3">
