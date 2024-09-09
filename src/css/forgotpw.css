@@ -1,0 +1,182 @@
+#main {
+  font-family: Poppins, sans-serif;
+}
+
+.navbar-brand {
+  padding-left: 55px;
+  font-size: 30px;
+  font-family: Staatliches, serif;
+  color: var(--bs-secondary-text-emphasis);
+  margin-left: 0;
+  background: url("../img/gadologo.jpg") left / contain no-repeat;
+}
+
+.navbar {
+  box-shadow: 0px 0px 10px rgba(33,37,41,0.6);
+  padding-left: 2%;
+}
+
+.container {
+  font-family: Poppins, sans-serif;
+}
+
+.row h2 {
+  margin-bottom: 0px;
+  font-size: 29px;
+}
+
+.form-control {
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  max-width: 100%;
+}
+
+.login-card {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(33,37,41,0.33);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.login-btn {
+  padding: 15px;
+  border-radius: 10px;
+  background: #660000;
+  color: #ffffff;
+  border-style: none;
+  font-size: 18px;
+}
+
+.cancel-btn {
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #464040;
+  font-size: 18px;
+  border: 1px solid #464040 ;
+  text-decoration: none;
+}
+
+.login-sec h2 {
+  font-size: 25px;
+  margin-bottom: 0px;
+  color: #464040;
+}
+
+.login-btn:hover {
+  color: #ffffff;
+  background-color: #c81b1b;
+}
+
+.cancel-btn:hover {
+  color: #464040;
+  background-color: #ffffff;
+}
+
+.login-btn:active {
+  color: #ffffff;
+  background-color: #c81b1b;
+}
+
+.cancel-btn:active {
+  color: #464040;
+  background-color: rgb(255,255,255);
+}
+
+.login-lbl {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #464040;
+}
+
+.rbm-me {
+}
+
+.rbm-me {
+  text-align: left;
+}
+
+.login-ftr {
+  font-size: 13px;
+  color: #464040;
+  margin-bottom: 30px;
+}
+
+.login-ftr a {
+  text-decoration: none;
+  color: #464040;
+}
+
+.login-ftr a:hover {
+  text-decoration: none;
+  color: #807f7f;
+}
+
+.login-con {
+  max-width: 596px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(33,37,41,0.33);
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  border-radius: 20px;
+}
+
+.log-main h2 {
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+@media (max-width: 500px) {
+  .login-con {
+    background: rgba(255,255,255,0);
+    box-shadow: 0px 0px;
+    padding: 45px 40px;
+    padding-top: 44px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .log-main h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  #main {
+    margin-top: 150px;
+    height: 100%;
+  }
+}
+
+.select-role {
+  height: 59px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+select:invalid, select[value=""] {
+  color: #595c69;
+}
+
+.reset-p {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .reset-p {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

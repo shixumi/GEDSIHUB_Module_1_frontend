@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const EmailSent = () => {
+
     return (
         <div>
             <nav className="navbar navbar-expand-md fixed-top" style={{ background: '#ffffff' }}>

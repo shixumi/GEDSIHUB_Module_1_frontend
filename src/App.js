@@ -8,6 +8,8 @@ import ActivationPage from './pages/ActivationPage';
 import HomePage from './pages/HomePage';
 import './bootstrap/css/bootstrap.min.css';
 import './css/activation.css';
+import './css/forgotpw.css';
+import ForgotPW from './pages/ForgotPW';
 
 
 const App = () => {
@@ -25,6 +27,7 @@ const App = () => {
           path=""
           element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />}
         />
+        <Route path="/forgotpw" element={<ForgotPW />} />
       </Routes>
     </Router>
   );

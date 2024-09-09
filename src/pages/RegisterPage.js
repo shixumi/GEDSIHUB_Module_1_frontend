@@ -46,7 +46,7 @@ const RegisterPage = () => {
           <div class="text-center formlogo">
             <img src={gadologo} width='150px' margin-bottom="200px" alt="logo" className="logo" />
           </div>
-          <h2 class="head2">GEDSI HUB</h2>
+          <h2 class="gedsilogo">GEDSI HUB</h2>
           <p class='text-center'>Fill up to activate your account</p>
           <form className="text-center" onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -55,7 +55,7 @@ const RegisterPage = () => {
                 className="focus-ring focus-ring-light form-control login-form"
                 type="email"
                 name="email"
-                placeholder="Enter your pup webmail"
+                placeholder="Webmail"
                 required
                 pattern="^[a-zA-Z0-9._%+-]+@.+\.(pup|edu|com)$"
                 value={email}
@@ -68,7 +68,7 @@ const RegisterPage = () => {
                 className="focus-ring focus-ring-light form-control"
                 type="password"
                 name="password"
-                placeholder="Enter your password"
+                placeholder="Password"
                 required
                 minLength="6"
                 value={password}

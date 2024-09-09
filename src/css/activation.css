@@ -210,8 +210,13 @@ select:invalid, select[value=""] {
 .container h2 {
   margin-top: -10px;
   margin-bottom: 25px;
+}
+.gedsilogo {
+  margin-top: -10px;
+  margin-bottom: 25px;
   font-family: Staatliches, sans-serif;
 }
+
 
 
 

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import gadologo from '../img/v2gadologo.png';
+import ForgotPW from './ForgotPW';
 
 
 const LoginPage = () => {
@@ -48,7 +49,7 @@ const LoginPage = () => {
             <img src={gadologo} width='150px' margin-bottom="200px" alt="logo" className="logo" />
           </div>
 
-          <h2>GEDSI HUB</h2>
+          <h2 className='gedsilogo'>GEDSI HUB</h2>
           <p class='text-center'>Sign in to start your session</p>
           <form className="text-center" onSubmit={handleSubmit}>
             <div className="mb-3">
@@ -82,7 +83,7 @@ const LoginPage = () => {
                 <input className="form-check-input" type="checkbox" id="formCheck-1" />
                 <label className="form-check-label" htmlFor="formCheck-1">Keep me logged in</label>
               </div>
-              <a className="fgt-pass">Forgot Password?</a>
+              <a className="fgt-pass" href='/forgotpw'>Forgot Password?</a>
             </div>
             <div className="mb-3">
               <button className="btn btn-primary shadow-sm d-block w-100 login-btn" type="submit">Sign in</button>
